@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="py-6 border-b border-gray-100 border-opacity-10">
+      <div class="wrapper">
+        <nav class="flex justify-between items-center">
+          <div class="logo">
+            <a href="index.html" class="text-xl font-bold">DevBlog</a>
+          </div>
+          <div class="nav-links space-x-6">
+            <a href="index.html" class="text-foreground">Blog</a>
+            <a href="#" class="text-gray-500 hover:text-foreground">About</a>
+            <a href="#" class="text-gray-500 hover:text-foreground">Projects</a>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              class="text-gray-500 hover:text-foreground"
+              >GitHub</a
+            >
+          </div>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="sun-icon"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="moon-icon"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <section class="blog-header my-16 text-center">
+          <h1 class="text-huge font-bold tracking-tight mb-4">
+            Photografh Blog
+          </h1>
+          <p class="text-xl text-gray-500">
+            Thoughts, updates, and insights on Photografh
+          </p>
+        </section>
+
+        <section class="posts-grid mb-24">
+          <h2 class="text-h2 font-bold mb-8">Latest Posts</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Posts will be dynamically inserted here -->
+          </div>
+        </section>
+      </div>
+
+      <section class="newsletter-section bg-secondaryBg py-12 mb-24">
+        <div class="wrapper">
+          <div class="text-center max-w-xl mx-auto">
+            <h2 class="text-h2 font-bold mb-4">Subscribe to the newsletter</h2>
+            <p class="text-gray-500 mb-8">
+              Get the latest posts and updates delivered to your inbox.
+            </p>
+            <form class="flex flex-col sm:flex sm:flex-row sm:gap-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="bg-background border border-gray-100 border-opacity-10 rounded-lg py-3 px-4 mb-4 sm:mb-0 flex-grow"
+              />
+              <button
+                type="submit"
+                class="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-5 rounded-lg transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-100 border-opacity-10 py-10">
+      <div class="wrapper">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="index.html" class="text-xl font-bold">DevBlog</a>
+            <p class="text-gray-500 mt-2">Thoughts and code by a developer.</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-500 hover:text-foreground">Twitter</a>
+            <a href="#" class="text-gray-500 hover:text-foreground">GitHub</a>
+            <a href="#" class="text-gray-500 hover:text-foreground">LinkedIn</a>
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-8 border-t border-gray-100 border-opacity-10 text-center text-gray-400 text-sm"
+        >
+          <p>
+            &copy; <span id="current-year"></span> DevBlog. Built with ❤️ for
+            GitHub Pages.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
