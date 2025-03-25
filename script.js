@@ -1,6 +1,47 @@
 // Blog posts data
 const blogPosts = [
   {
+    id: 2,
+    title: "Services Update",
+    slug: "services-updates",
+    date: "March 21, 2025",
+    author: "Photografh Team",
+    excerpt:
+      "We're introducing new features for photographers, including package creation and service filtering, alongside security enhancements.",
+    content: `
+            <h1 class="text-3xl font-bold mb-6">Services Updates</h1>
+            
+            <p class="text-lg text-gray-700 mb-4">At Photografh, we're constantly working to improve both the user experience and platform security. Our latest update brings significant improvements to how photographers manage their services and how users browse them.</p>
+            
+            <h2 class="text-2xl font-bold mt-8 mb-4">New Features for Photographers</h2>
+            <p class="text-lg text-gray-700 mb-4">We're making it easier for photographers to showcase and manage their services. Here are the latest enhancements:</p>
+            
+            <ul class="list-disc pl-6 mb-4 text-lg text-gray-700">
+                <li class="mb-2"><strong>Photographer Package Creation</strong>: Photographers can now create custom service packages that best fit their offerings, including different tiers and pricing structures.</li>
+                <li class="mb-2"><strong>Photographer Package Management</strong>: Easily edit, update, and refine service packages to keep offerings competitive and relevant.</li>
+                <li class="mb-2"><strong>Service Filtering</strong>: Clients can now filter services based on criteria such as price, category, and location, making it easier to find the perfect match.</li>
+                <li class="mb-2"><strong>Package Comparison</strong>: Clients can now compare multiple service packages side by side, streamlining their decision-making process.</li>
+                <li class="mb-2"><strong>Explore Services Page</strong>: A new dedicated page for browsing all available photography and videography services at a glance.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mt-8 mb-4">User Experience Improvements</h2>
+            <p class="text-lg text-gray-700 mb-4">We've refined our user interface to make onboarding smoother and more intuitive.</p>
+            <ul class="list-disc pl-6 mb-4 text-lg text-gray-700">
+                <li class="mb-2"><strong>Phone Number Input Refinement</strong>: Instead of requiring a full international number, users can now input their country code separately, improving clarity during registration.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mt-8 mb-4">Security Enhancements</h2>
+            <p class="text-lg text-gray-700 mb-4">User account security is a top priority. We’ve made updates to strengthen password security:</p>
+            <ul class="list-disc pl-6 mb-4 text-lg text-gray-700">
+                <li class="mb-2"><strong>Stronger Password Requirements</strong>: New passwords must now include an uppercase letter, a lowercase letter, and at least one number.</li>
+            </ul>
+            
+            <p class="text-lg text-gray-700 mb-4">We’re excited to release more features over the next few months! Stay tuned for more updates and let us know your feedback!</p>
+        `,
+    tags: ["update", "services", "security"],
+    image: "./photos/services1.png",
+  },
+  {
     id: 1,
     title: "Hello World",
     slug: "hello-world",
